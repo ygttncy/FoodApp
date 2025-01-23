@@ -1,0 +1,16 @@
+@import "../../styles/abstracts/index";
+
+.buttons-container {
+  padding: 20px 0;
+  background-color: $secondary-bg;
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+}
+.save-changes {
+  @include primary-btn;
+}
+.discard-changes {
+  @include secondary-btn;
+  margin-right: 10px;
+}

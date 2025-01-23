@@ -1,0 +1,110 @@
+.amod-tree {
+  padding: 24px 0px 0px 0px;
+  gap: 20px;
+  border-radius: 8px 0px 0px 0px;
+  opacity: 0px;
+  background: rgba(31, 29, 43, 1);
+
+  .amod-container {
+    display: flex;
+
+    gap: 111px;
+    opacity: 0px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 24px;
+
+    h1 {
+      color: white;
+      font-family: "Barlow", sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 28px;
+      white-space: nowrap;
+    }
+
+    .amod-filter {
+      gap: 10px;
+      border-radius: 8px;
+      border: 1px 0px 0px 0px;
+      background-color: rgba(37, 40, 54, 1);
+      color: white;
+    }
+  }
+
+  .amod-dvider {
+    width: 330px;
+    border: 1px solid rgba(57, 60, 73, 1);
+    margin-left: 24px;
+    margin-right: 26px;
+    margin-top: 26px;
+  }
+
+  .amod-menu {
+    .amod-menu-item-container {
+      margin: 20px 24px 24px 24px;
+
+      .amod-menu-item {
+        display: flex;
+        gap: 12px;
+
+        height: 39px;
+        white-space: nowrap;
+        margin-bottom: 24px;
+
+        img {
+          background-color: transparent;
+        }
+
+        .amod-menu-item-text {
+          margin-left: 16px;
+
+          p {
+            margin: 0;
+            margin-bottom: 4px;
+            color: white;
+          }
+
+          .under {
+            color: gray;
+            font-family: "Barlow", sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+          }
+        }
+      }
+
+      .amod-menu-item-beef {
+        margin-bottom: 32px;
+      }
+
+      .amod-button {
+        button {
+          width: 318px;
+          padding: 14px;
+          gap: 8px;
+          border-radius: 8px;
+          border: 1px;
+          opacity: 0px;
+          border: 1px solid rgba(234, 124, 105, 1);
+          text-align: center;
+          cursor: pointer;
+          background-color: rgba(234, 124, 105, 1);
+          font-family: "Barlow", sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 19.6px;
+          color: rgb(255, 255, 255);
+
+          &:hover {
+            background-color: transparent;
+            border: 1px solid rgba(234, 124, 105, 1);
+            transition-duration: 0.3s;
+            color: rgba(234, 124, 105, 1);
+          }
+        }
+      }
+    }
+  }
+}

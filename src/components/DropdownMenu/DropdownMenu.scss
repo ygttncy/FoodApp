@@ -1,0 +1,48 @@
+@import "../../styles/abstracts/index";
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  background-color: $secondary-bg;
+  padding: 14px;
+  border: 1px solid $primary-bg;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 172px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: $tertiary-font-color;
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: $tertiary-bg;
+  min-width: 172px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+}
+.dropdown-menu li {
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  color: $tertiary-font-color;
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.dropdown-menu li:hover {
+  background-color: $secondary-bg;
+}

@@ -1,0 +1,88 @@
+@import "../../styles/abstracts/variables";
+
+.order-report {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  background-color: $secondary-bg;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-family: "Barlow", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 10px 15px;
+      text-align: left;
+      border-bottom: 1px solid $secondary-bg;
+      font-family: "Barlow", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+
+      .customer-cont {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+      }
+    }
+
+    th {
+      background-color: $secondary-bg;
+
+      font-family: "Barlow", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      text-align: left;
+    }
+
+    tr {
+      &:nth-child(even) {
+        background-color: $secondary-bg;
+      }
+
+      &:hover {
+        background-color: $secondary-bg;
+      }
+    }
+
+    .status {
+      border-radius: 20px;
+      padding: 5px 10px;
+      text-align: center;
+      display: inline-block;
+      width: 92px;
+      height: 26px;
+
+      &.completed {
+        background-color: #6be2be3d;
+        color: #50d1aa;
+      }
+
+      &.preparing {
+        background-color: #9290fe33;
+        color: #9290fe;
+      }
+
+      &.pending {
+        background-color: #ffb57233;
+        color: #ffb572;
+      }
+    }
+  }
+}

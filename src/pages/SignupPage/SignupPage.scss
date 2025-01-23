@@ -1,0 +1,83 @@
+$primary-font: "Outfit", sans-serif;
+
+
+
+.signup-page {
+  background-color: #252836;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: white;
+    font-family: $primary-font;
+    font-size: 48px;
+  }
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 800px;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #1f1d2b;
+  input {
+    border-radius: 8px;
+    height: 48px;
+    padding: 14px;
+    border: none;
+    align-self: stretch;
+    background-color: #2d303e;
+    outline: none;
+    font-family: $primary-font;
+    color: white;
+  }
+  input::placeholder {
+    color: #304747;
+    font-family: $primary-font;
+  }
+
+}
+
+.button-enabled{
+  padding: 14px;
+  border-radius: 8px;
+  width: 200px;
+  background-color: #ea7c69;
+  border: none;
+  color: white;
+  font-family: $primary-font;
+  font-weight: bold;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button-enabled:hover{
+  box-shadow: 2px 2px 16px #ea7c69, -2px -2px 16px #ea7c69;
+}
+
+.button-disabled{
+  padding: 14px;
+  border-radius: 8px;
+  width: 200px;
+  background-color: lightgray;
+  border: none;
+  color: white;
+  font-family: $primary-font;
+  font-weight: bold;
+}
+
+.button-disabled:hover{
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.signup-alert {
+  color: white;
+  font-family: $primary-font;
+}
+}

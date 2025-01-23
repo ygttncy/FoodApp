@@ -1,0 +1,6 @@
+@import "../../styles/abstracts/index";
+.message-container {
+  @extend %settings-container !optional;
+  margin-left: 100px;
+  color: white;
+}

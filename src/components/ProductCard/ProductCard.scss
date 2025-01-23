@@ -1,0 +1,61 @@
+@import "../../styles/abstracts/index";
+
+.product-card {
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.img-box {
+  padding: 20px 10px 0 10px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .food-image {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+.details {
+  max-width: 150px;
+  font-size: 14px;
+  p {
+    margin-bottom: 10px;
+    height: 34px;
+    font-weight: 500;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+  span {
+    color: $secondary-font-color;
+    font-weight: 400;
+  }
+}
+.edit-box {
+  background-color: rgba($accent-color, 0.25);
+  padding: 15px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: $accent-color;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($accent-color, 0.35);
+  }
+}

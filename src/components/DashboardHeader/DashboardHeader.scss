@@ -1,0 +1,31 @@
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 8px;
+  min-height: 80px;
+
+  .dashboard-info {
+    h1 {
+      color: #ffffff;
+      margin: 0;
+      font-family: "Barlow", sans-serif;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 38px;
+      text-align: left;
+    }
+
+    .dashboard-date {
+      margin: 4px 0 0;
+      color: #abbbc2;
+      font-size: 14px;
+      font-family: "Barlow", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+    }
+  }
+}

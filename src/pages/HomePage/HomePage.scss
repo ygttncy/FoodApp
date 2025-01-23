@@ -1,0 +1,54 @@
+@import "../../styles/abstracts/placeholders";
+
+.mainRoot {
+  @extend %main-container;
+  position: relative;
+}
+
+.responsive-cart-root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  font-family: "Barlow", sans-serif, sans-serif;
+  background: #393c49;
+  color: #fff;
+  position: relative;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: thin;
+  scrollbar-color: #d7d4d6 #fff;
+  resize: none;
+
+}
+
+.responsive-cart-sidebar {
+  display: none;
+}
+
+.cart-payment-container {
+  position: absolute;
+  display: flex;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  transform: translateX(50%);
+  transition: all 0.9s ease-in-out;
+}
+
+.cart-payment-close {
+  top: 0;
+  right: 0;
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  height: 100vh;
+  transform: translateX(100%);
+  transition: all 0.9s ease-in-out;
+}
+
+.payment-open {
+  transform: translateX(0);
+  transition: all 0.9s ease-in-out;
+}

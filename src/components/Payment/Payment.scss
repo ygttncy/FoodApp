@@ -1,0 +1,194 @@
+@import "../../styles/abstracts/index";
+
+.payment-container{
+  background-color: $secondary-bg;
+  padding: 20px;
+  width: 410px;
+  position: relative;
+  overflow-y: auto;
+}
+.header {
+  .header-title {
+    font-family: $primary-font;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+    color: $primary-font-color;
+  }
+  .header-text {
+    font-family: $primary-font;
+    font-weight: 500;
+    line-height: 22px;
+    color: $secondary-font-color;
+  }
+}
+.line-box {
+  max-width: 384px;
+  .line-svg {
+    width: 100%;
+  }
+}
+.payment-methods-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+
+  .methods-title {
+    font-family: $primary-font;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: $primary-font-color;
+  }
+  .methods-card-box {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+
+    @media (max-width: 1380px) {
+      justify-content: center;
+    }
+
+    .methods-card {
+      width: 104px;
+      min-height: 65px;
+      background-color: $secondary-bg;
+      color: $secondary-font-color;
+      border: 1px solid $primary-bg;
+      border-radius: 8px;
+      cursor: pointer;
+      padding: 10px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .methods-card.active {
+      background-color: $tertiary-bg;
+      border: 1px solid $secondary-font-color;
+      color: #fff;
+    }
+    .btn-check-icon {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      visibility: hidden;
+    }
+    .btn-check-icon.active {
+      visibility: visible;
+    }
+    .methods-card-text {
+      font-family: $primary-font;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+  }
+}
+
+.payment-content-container {
+  .payment-information {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .informations {
+    font-family: $primary-font;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: $primary-font-color;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .information-inputs {
+      height: 48px;
+      border: 1px solid $primary-bg;
+      border-radius: 8px;
+      background-color: $tertiary-bg;
+      padding: 14px;
+      font-family: $primary-font;
+      font-size: 14px;
+      line-height: 20px;
+      color: $tertiary-font-color;
+      width: 100%;
+    }
+  }
+
+  .date-and-cvv-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+
+    #expriy-date {
+      max-width: 172px;
+    }
+    #cvv {
+      max-width: 172px;
+    }
+  }
+}
+
+.order-information {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 12px;
+  flex-direction: row;
+
+  .order-type-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .order-type-text {
+      font-family: $primary-font;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+      color: $primary-font-color;
+    }
+  }
+
+  .table-no-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 172px;
+    .table-no-text {
+      font-family: $primary-font;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+      color: $primary-font-color;
+    }
+    .table-no-input {
+      height: 48px;
+      border: 1px solid $primary-bg;
+      border-radius: 8px;
+      background-color: $tertiary-bg;
+      width: 100%;
+      padding: 14px;
+      font-family: $primary-font;
+      font-size: 14px;
+      line-height: 20px;
+      color: $tertiary-font-color;
+    }
+  }
+}
+
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 370px;
+  flex: 1;
+  width: 100%;
+  margin-top: 15px;
+  #cancel-btn {
+    box-shadow: none;
+  }
+}

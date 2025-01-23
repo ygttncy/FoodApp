@@ -1,0 +1,6 @@
+@import "../../styles/abstracts/index";
+.discount-container {
+  @extend %settings-container !optional;
+  margin-left: 100px;
+  color: white;
+}
