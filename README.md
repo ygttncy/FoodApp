@@ -18,7 +18,7 @@ Food App is an application that allows users to browse a menu, place food orders
 - **Course Name:** Frontend Development Training
 - **Scope:** React, JavaScript, SCSS
 - **Duration:** 2 months (including development and testing phases)
-visit to site -->  https://june-frontend-order-app-1.archisacademy.com/
+- visit to site -->  https://june-frontend-order-app-1.archisacademy.com/
 ---
 
 ## 🚀 Project Features
